@@ -1,0 +1,79 @@
+xmon:
+  #MYSQL/SQLITE
+  database$mode: 'SQLITE'
+  database$name: 'phone-xmon.db'
+  database$tableprefix: 'xmonphone_'
+  #Poniższe tylko do MYSQL
+  database$host: 'localhost'
+  database$user: 'user'
+  database$pass: 'password'
+  database$port: 3306
+  #CONFIG
+  sms$cost: 2.0
+  phone$cost: 150.0
+  anon$cost: 100.0
+  ksiazka$telefoniczna$limit$kontaktow: 50
+  service$cords$template: 'x={x}; y={y}; z={z}'
+  #Lang
+
+  #PHONE
+  phone$title: 'Telefon'
+
+  #998
+  998$usage: '&4Błąd: &c/998 <Wiadomość>'
+  998$sendto: '&7[&c998&7] &3 {MESSAGE} {CORDS}'
+  998$confirm: '&7>> Zgłoszenie zostało wysłane'
+  998$phone$in$hand: '&4Błąd: &cAby wysłać zgłoszenie musisz mieć Telefon w ręce.'
+
+  #999
+  999$usage: '&4Błąd: &c/999 <Wiadomość>'
+  999$sendto: '&7[&c999&7] &3 {MESSAGE} {CORDS}'
+  999$confirm: '&7>> Zgłoszenie zostało wysłane'
+  999$phone$in$hand: '&4Błąd: &cAby wysłać zgłoszenie musisz mieć Telefon w ręce.'
+
+  #997
+  997$usage: '&4Błąd: &c/997 <Wiadomość>'
+  997$sendto: '&7[&c997&7] &3 {MESSAGE} {CORDS}'
+  997$confirm: '&7>> Zgłoszenie zostało wysłane'
+  997$phone$in$hand: '&4Błąd: &cAby wysłać zgłoszenie musisz mieć Telefon w ręce.'
+
+  #NUMERY (KSIAZKA TELEFONICZNA)
+  numery$usage: '&4Błąd: &c/numery dodaj/usun/lista'
+  numery$usage$dodaj: '&4Błąd: &c/numery dodaj <Numer Telefonu> <Nazwa Kontaktu>'
+  numery$no$number: '&4Błąd: &cNumer jest nie prawidłowy.'
+  numery$contain$number: '&4Błąd: &cTen numer znajduje się w twojej książce telefonicznej!'
+  numery$contact$limit: '&4Błąd: &cW twojej książce telefonicznej znajduje się zbyt wiele kontaków!'
+  numery$save$compleat: '&7>> Pomyślnie zapisano numer telefonu!'
+  numery$usage$usun: '&4Błąd: &c/numery usun <Numer Telefonu>'
+  numery$contact$no$contain: '&4Błąd: Twoja książka telefoniczna nie zawiera tego numeru!'
+  numery$delete$compleat: '&7>> Pomyślnie usunięto numer!'
+  numery$lista$stopka: '&7<-- &8(&7{SIZE}&8)&7 -->'
+  numery$phone$in$hand: '&4Błąd: &cAby dodać numer do ksiązki telefonicznej musisz mieć telefon w ręce.'
+
+  #SMS
+  sms$usage: '&4Błąd: &c/SMS <Numer Telefonu> <Wiadomość>'
+  sms$no$correct: '&4Błąd: &cNumer jest nie prawidłowy.'
+  sms$no$money: '&4Błąd: &cNie posiadasz {COST} $, aby opłacić rachunek!'
+  sms$your$number: '&4Błąd: &cNie możesz wysłać wiadomości do siebie!'
+  sms$receiving$player: '&7[&6SMS&7] &8Otrzymałeś/aś wiadomość z numeru &6{NUMBER} {CONTACT} &8 o treści: &6{MESSAGE}'
+  sms$success$send: '&7[&6SMS&7] &8Wysłałeś/aś pomyślnie wiadomość pod numer &6{NUMBER} &8 o treści: &6{MESSAGE}'
+  sms$money$withdraw: '&4-{COST}$ opłaty za SMS'
+  sms$receiving$player$no$phone: '&4Błąd: &cSMS nie może zostać dostarczony, ponieważ telefon o numerze {NUMBER} jest wyłączony.'
+  sms$receiving$player$offline: '&4Błąd: &cSMS nie może zostać dostarczony, ponieważ telefon o numerze {NUMBER} jest wyłączony.'
+  sms$phone$in$hand: '&4Błąd: &cAby wysłać wiadomość SMS musisz mieć Telefon w ręce.'
+
+  #SHOP
+  shop$villager$name: 'iDream'
+  shop$no$money: '&4Błąd: &cNie posiadasz {COST}$, aby opłacić rachunek za kupno telefonu!'
+  shop$buy: '&4-{COST}$ opłaty za kupno Telefonu.'
+  shop$success$buy: '&7>> Pomyślnie zakupiłeś telefon!'
+  shop$contain$phone: '&4Błąd: &cPosiadasz już telefon!'
+
+  #ANON
+  anon$usage: '&4Błąd: &c/anon <Wiadomosc>'
+  anon$phone$in$hand: '&4Błąd: &cAby wysłać wiadomość na DarkWebie musisz mieć Telefon w ręce.'
+  anon$message$send: '<ANON> {MESSAGE}'
+  anon$success$send: '&7>> Pomyślnie wysłałeś/aś wiadomośc na darkweb!'
+  anon$no$money: '&4Błąd: &cNie posiadasz {COST} $, aby opłacić rachunek za darkweba!'
+  anon$money$withdraw: '&4-{COST}$ opłaty za DarkWeb'
+

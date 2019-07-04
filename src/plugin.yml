@@ -1,0 +1,34 @@
+main: cf.xmon.phone.Main
+version: 1.0
+author: Xmon
+website: 'https://Xmon.cf'
+name: x-Phone
+depend:
+  - Vault
+commands:
+  999:
+    description: 'Wysyła zgłoszenie do służb pogotowia'
+    aliases:
+      - pogotowie
+  998:
+    description: 'Wysyła zgłoszenie do służb straży pożarnej'
+    aliases:
+      - straz
+  997:
+    description: 'Wysyła zgłoszenie do służb policji'
+    aliases:
+      - policja
+  sms:
+    description: 'Wysyła wiadomośc do znajowego'
+    aliases:
+      - wiadomosc
+  numery:
+    description: 'Otwiera ksiązke telefoniczną'
+    aliases:
+      - ksiazkatelefoniczna
+      - spisnumerow
+  anon:
+    description: 'Wysyła wiadomość na darkwebie'
+    aliases:
+      - anonim
+      - darkweb
